@@ -1,17 +1,166 @@
 <!-- COMENTARIOS HTML -->
 <!-- ATAJO: CTRL + / -->
 <!-- <x> apertura </x> cierre -->
+<!-- html Lenguaje de marcado de hypertexto -->
+<!-- marcado Etiquetas (apertura y cierre) -->
+<!-- hipertexto redireccion a otras paginas -->
 <!DOCTYPE html>
+<!-- lang lenguaje que esta hecho nuestra pagina -->
 <html lang="en">
+<!-- HEAD CEREBRO DE MI pagina es todo lo que necesitemos para que funcione nuestro sitio web pero que no se vea -->
+<!--LINKS Vinculan con mi .css,vinculan con .js -->
+<!-- METADATOS enfocados en el posicionamiento SEO -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Carlos Pareja">
     <meta name="keywords" content="libros,libreria,cuentos">
     <meta name="description" content="pagina informativa sobre libros">
-    <title>Document</title>
+
+    <!-- Link a mis estilos -->
+    <!-- 
+    Href donde especifico las rutas de mis estilos -->
+
+    <link rel="stylesheet" href="./Styles/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Portafolio Carlos</title>
 </head>
+
 <body>
-    
+    <!-- BODY DOPNDE VAN NUESTRAS ETIQUETAS -->
+    <!--
+SOLO SE PUEDE TENER UNO
+DIV SE USA COMO SEPARADOR DE CONTENIDO
+Header Encabezado
+Main contenido
+Footer Pie de pagina -->
+
+    <!-- INICIO ENCABEZADO DE MI PAGINA -->
+    <HEader>
+
+        <!-- DENTRO PONEMOS NUESTRO MENU O BANNER 
+    CARRUSEL O LO QUE QUERAMOS 
+    QUE SEA NUESTRO ENCABEZADO -->
+
+        <!-- MENU DE NAVEGACION -->
+
+        <!-- etiqueta Nav es menu de navegacion -->
+
+        <nav>
+            <!-- siempre son listas  OL es lista odenada UL lista desordenadas  -->
+            <!-- CADA LISTA CONTIENE SU ELEMENTO LIST ITEM  -->
+
+            <!-- <OL>
+    <LI>Elemento 1: ordenada</LI>
+    <li>Elemento 2: ordenada</li>
+    <li>Elemento 3: ordenada</li>
+</OL> -->
+
+            <!-- etiqueta de separcion HR -->
+            <!-- <hr> -->
+            <!-- a etiqueta para redireccionar -->
+            <ul>
+                <li><a href="https://excalidraw.com/">seccion1</a></li>
+                <li><a href="#">seccion2</a></li>
+                <li><a href="./index.html"><img src="./assets/logo.png" alt="logo"></a></li>
+                <li><a href="#">seccion3</a></li>
+                <li><a href="#">seccion4</a></li>
+
+            </ul>
+
+        </nav>
+
+        <section>
+            <img src="./assets/banner.webp" alt="Banner de libros">
+        </section>
+    </HEader>
+    <!-- Inicio contenido pagina -->
+    <MAIn>
+        <!-- SE REFIERE AL CONTENIDO PUEDE PONERSE CUALQUIER TIO DE MULTIMEDIA -->
+        <!-- seccion informativa 1 -->
+        <!-- Etiqueta section : me divide mi sitio en tematicas
+     generales de contenido-->
+        <section>
+
+            <!-- 
+        Etiquetas para los titulos H
+        H1 El titulo principal - solo debe haber uno
+
+        H2 - titulos de las secciopnes de contenido - H3-H4 ETC. SERISAN SUBTITULOS
+        P- se refiere a los parrafos para las secciones
+LOREM - ES TEXTO FALSO DE EJEMPLO
+     -->
+            <H1>TITULO PRINCIPAL</H1>
+
+            <!-- ETIQUETA IFRAME - NOS PERMITE CONSUMIR ELEMENTOS COMO VIDEOS MAPAS IMAGENES -->
+
+            <!-- ETIQUETA DIV - (NO SEMANTIC0) NOMBRE ETIQUETA DEL CONTENIDO QUE VAMOS A TENER -->
+
+            <!-- H3 - SUBTITULO
+    LI - ITEM LISTA
+    NAV - MENU
+ -->
+
+            <!-- ETIQUETA DIV (NO SEMANTICO)
+    PUEDE CONTENER CUALQUIER COSA TODO LO NO SEMANTICO
+
+ -->
+            <DIV><iframe width="560" height="315" src="https://www.youtube.com/embed/Z5ovFSHqofE?si=ChS9Tpx1DfISym5I"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></DIV>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis alias rerum adipisci ut numquam est
+                natus, accusamus aspernatur, non ullam ipsa quod itaque quasi quaerat ex officiis animi laboriosam
+                aliquam!</p>
+            <a href="https://maps.app.goo.gl/8XNK8XDbe5ophurz8"><img src="./assets/logo.png" alt="logo"></a>
+            <H2>TITULO PRINCIPAL</H2>
+            <H3>TITULO PRINCIPAL</H3>
+            <H4>TITULO PRINCIPAL</H4>
+            <H5>TITULO PRINCIPAL</H5>
+            <H6>TITULO PRINCIPAL</H6>
+
+
+        </section>
+
+        <SECtion>
+            <H2>EL TITULO DE MI SECCION</H2>
+            <DIv>
+                <img src="./assets/img.webp" alt="IMAGEN">
+                <img src="./assets/img.webp" alt="IMAGEN">
+                <img src="./assets/img.webp" alt="IMAGEN">
+                <img src="./assets/img.webp" alt="IMAGEN">
+                <img src="./assets/img.webp" alt="IMAGEN">
+                <img src="./assets/img.webp" alt="IMAGEN">
+
+            </DIv>
+        </SECtion>
+
+        <!-- seccion informativa 1 -->
+    </MAIn>
+
+    <!-- INICIO DE PIE DE PAGINA -->
+
+    <footer>
+        <!-- division de contenido contactenos -->
+        <DIV>
+            <h3></h3>
+            <OL>
+                <LI>TELEFONO: 555 555 5555</LI>
+                <LI>CORREO: cpgalvis15@gmail.com</LI>
+                <LI>@Carlos</LI>
+            </OL>
+        </DIV>
+        <!-- division de contenido contactenos -->
+        <!-- division de contenido contactenos -->
+        <div>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            
+        </div>
+    </footer>
 </body>
+
 </html>
