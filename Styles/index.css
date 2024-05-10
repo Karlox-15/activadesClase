@@ -1,2 +1,82 @@
-body{background-color: #92ddc2
-    ;}
+/* esto comentario */
+/* Guia paso a paso para trabajar CSS */
+/* 1. verifique primero si CSS esta vinculado bien */
+/* Ejemplo:body{background-color: #92ddc2
+    ;}  */
+/* 2. Tengan un orden definido 
+CSS-> Hoja de estilos en cascada
+*/
+
+/* lo primero son las importaciones 
+*/
+
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+/*Establecer las variales de CSS  */
+/* Paletas de colores,tipografias,medidas que se repitan constantemente */
+
+/* 
+Selectores
+-Etiqueta: General
+
+-Clases: Un poco mas especificas(vrios elementos pueden tener la misma clase)
+CLASES: SE LLAMAN POR .
+
+-ID:sumamente especificos(cada elemento solo puede tener 1)
+ID: SE LLAMAN POR #
+
+pseudoclase: elementos propios de CSS me hacen referencia ami html -> caracteristicas particulares -> :root
+
+Pseudoclase -> Codigo raiz
+
+*/
+
+:root{--tipografia:
+    --tipografia:"Zilla Slab,"}
+
+    /* condiciones iniciales */
+    /* Los estilos ue quiero en todo mi sitio web */
+
+    /* * -> selector universal -> aplica para todos los estilos a TODO */
+     /*MARGIN -> MARGEN EXTERNO  */
+*margin:{--tipografia:--tipografia:--tipografia: zilla sab, }
+
+
+
+/* ----------HEADEAR-------- */
+/* CONTENEDOR PADRE -> DETERMINAR DIMENSIONES */
+header{
+    border:solid green ;
+/* ANCHO */
+width: 100vw;
+height: 100vh;
+
+
+
+}
+    
+.menuNav{
+    background-color: var(--colorClaro);
+width: 100px;
+height: 100px;
+}
+
+.listaMenu{
+    border: 5px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+/* LO QUE ESTA DENTRO DEL HEADER SON HIOS */
+
+
+
+/* -------MAIN--------- */
+
+
+/* --------FOOTER------- */
