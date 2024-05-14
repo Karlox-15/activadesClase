@@ -35,13 +35,13 @@
 
 
 /* pseudoclase que me hace referencia a todo mi html root -> codíco raíz */
-:root{
-    border:solid var(--colorTexto);
-    --tipografia:'Josefin Sans', sans-serif;
-    --colorFondo:white;
-    --colorClaro:#353530;
-    --colorTexto:#92ddc2;
-    --colorContraste:#d3dd92;
+:root {
+    border: solid var(--colorTexto);
+    --tipografia: 'Josefin Sans', sans-serif;
+    --colorFondo: white;
+    --colorClaro: #353530;
+    --colorTexto: #92ddc2;
+    --colorContraste: #d3dd92;
 }
 
 
@@ -50,20 +50,20 @@
 
 
 /* *-> selector universal -> me aplica los estilos a TODO */
-*{
+* {
     /* margin ->margen externo */
-    margin:0;
+    margin: 0;
     /* padding -> margen interno */
-    padding:0;
+    padding: 0;
 
 }
 
-body{
+body {
 
     border: solid var(--colorTexto);
 
     /* Ancho del tamaño de mi pantalla */
-    width:100%;
+    width: 100%;
     height: 100%;
     font-size: 12px;
     /* background-color -> color de fondo */
@@ -85,7 +85,7 @@ body{
 /* ---------HEADER------- */
 
 /* contenedor padre -> determinen dimensiones */
-header{
+header {
     /* ancho */
     /* vw -> ancho de pantalla
         vh -> alto de pantalla
@@ -94,22 +94,22 @@ header{
     width: 100vw;
     height: 40vh;
     color: #92ddc2;
-    
+
 }
 
 /* Lo que está dentro del header son hijos */
 
-.menuNav{
+.menuNav {
     background-color: var(--colorFondo);
     width: 100%;
     height: 50px;
     font-family: var(--tipografia);
-    
+
 }
 
 /* contenedor padre de las listas que quiero modificar una al lado del otro */
-.listaMenu{
-    height:100%;
+.listaMenu {
+    height: 100%;
     /* disposición flexible -> los elementos uno al lado del otro */
     display: flex;
     /* centrar */
@@ -121,10 +121,10 @@ header{
     gap: 60px;
     /* quitar viñetas de lista */
     list-style: none;
-    
+
 }
 
-.listaMenu a{
+.listaMenu a {
     /* quitar la decoración del texto */
     text-decoration: none;
     /* color del texto */
@@ -134,45 +134,53 @@ header{
     /* más ancha la letra -> negrilla */
     font-weight: bold;
 
-    
+
 }
 
-.listaMenu a:hover{
+.listaMenu a:hover {
     color: black;
 }
 
-.logo{
+.logo {
     /* ancho */
     width: 100px;
     /* alto */
     height: 100px;
-    
+
 }
-.buscar{
+
+.buscar {
     width: 300px;
     height: 300px;
 }
 
-.carrito{
+.card {
+    border: 2px solid var(--colorTexto);
+    height: 500px;
+
+}
+
+.carrito {
     width: 70px;
     height: 70px;
 
 }
 
-.usuario{
+.usuario {
 
     width: 70px;
     height: 70px;
 
 }
+
 /* banner */
 /* contenedor padre de la imagen */
-.baner{
+.baner {
     border: solid var(--colorTexto);
     width: 100%;
     height: 255%;
     display: flex;
-    
+
 
 
 
@@ -180,19 +188,20 @@ header{
 
 
 }
+
 /* mi imagen ocupa todo el espacio de su padre */
-.video-banner{
-    
+.video-banner {
+
     width: 100%;
     height: 30%;
     /* manipular la img */
     object-fit: fill;
 
-    
+
 }
 
 /* ---------MAIN------- */
-main{
+main {
     width: 100%;
     height: auto;
     display: flex;
@@ -206,16 +215,16 @@ main{
 
 /* Seccion 2 */
 
-.seccion2{
-  
+.seccion2 {
+
     height: 100%;
     width: 100%;
     justify-content: center;
-    
-    
+
+
 }
 
-.contenedor-img{
+.contenedor-img {
 
     /* organizar en filas y columnas */
     display: grid;
@@ -229,68 +238,70 @@ main{
     width: 100%;
     height: auto;
     justify-content: center
-    
 }
 
-.contenedor-img img{
+.contenedor-img img {
     width: 100%;
     height: 100%;
 
 }
-.title1{
 
-width: 100%;
-display: flex;
-height: 100%;
+.title1 {
+
+    width: 100%;
+    display: flex;
+    height: 100%;
 
 
 }
-.buton1{
+
+.buton1 {
     background-color: #92ddc2;
     font-family: var(--tipografia);
     color: azure;
     border-color: aliceblue;
-    
+
 }
 
-.buton2{
+.buton2 {
     background-color: #92ddc2;
     font-family: var(--tipografia);
     color: azure;
     border-color: aliceblue;
-    
+
 }
 
 
-.buton3{
+.buton3 {
     background-color: #92ddc2;
     font-family: var(--tipografia);
     color: azure;
     border-color: aliceblue;
-    
+
 }
 
-.buton4{
+.buton4 {
     background-color: #92ddc2;
     font-family: var(--tipografia);
     color: azure;
     border-color: aliceblue;
-    
+
 }
-.buton5{
+
+.buton5 {
     background-color: #92ddc2;
     font-family: var(--tipografia);
     color: azure;
     border-color: aliceblue;
-    
+
 }
 
-.buton6{
+.buton6 {
     background-color: #92ddc2;
     font-family: var(--tipografia);
     color: azure;
     border-color: aliceblue;
-    
+
 }
 
 
@@ -299,7 +310,7 @@ height: 100%;
 
 
 
-.titulo{
+.titulo {
     /* centrar texto */
     text-align: center;
     /* textos en mayúscula */
@@ -308,19 +319,22 @@ height: 100%;
     margin: 1px 1px;
     font-family: var(--tipografia);
 }
+
 .logo4 {
     width: 8%;
     height: 8%;
 }
-.logo5{
+
+.logo5 {
     width: 8%;
     height: 8%;
 }
+
 /* ---------FOOTER------- */
 
 /* definir qué es lo que van a editar */
 /* contenedor padre */
-footer{
+footer {
     /* dimensiones */
     width: 100%;
     height: 120%;
@@ -334,7 +348,7 @@ footer{
     color: white;
 }
 
-.logo-2{
+.logo-2 {
     width: 100px;
     height: 100px;
     align-items: center;
@@ -342,14 +356,16 @@ footer{
 }
 
 /* Los íconos en css y html, se toman como si fueran texto */
-.redesSociales{
+.redesSociales {
     text-align: center;
 }
-h3{
+
+h3 {
     text-align: center;
     margin-bottom: 15px;
 }
-i{
+
+i {
     margin: 15px;
     color: white;
 }
