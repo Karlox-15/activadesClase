@@ -1,82 +1,355 @@
-/* esto comentario */
-/* Guia paso a paso para trabajar CSS */
-/* 1. verifique primero si CSS esta vinculado bien */
-/* Ejemplo:body{background-color: #92ddc2
-    ;}  */
-/* 2. Tengan un orden definido 
-CSS-> Hoja de estilos en cascada
+/* ESTO ES UN COMENTARIO EN CSS*/
+
+/* Guía paso a paso, qué les recomiendo yo para trabajar en css
+
+    1. verifique que haya vinculado bien su css al html
+
+    Ej:
+
+    body{
+    background-color: aqua;
+    }
+
+    2. Tengan un orden definido
+
+    CSS -> Hoja de estilos en cascada
+
 */
 
-/* lo primero son las importaciones 
-*/
+/* lo primero son las importaciones */
+@import url('https://fonts.cdnfonts.com/css/josefin-sans');
 
-@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+/* Establecer las variables de css */
+/* Paleta de colores, tipografías, medidas que se repitan constantemente */
 
-/*Establecer las variales de CSS  */
-/* Paletas de colores,tipografias,medidas que se repitan constantemente */
 
 /* 
-Selectores
--Etiqueta: General
+    Selectores: 
+        -Etiqueta: General
+        -Clases: un poco más específicas (varios elementos pueden tener la misma clase) -> .
+        -ID: sumamente específicos (cada elemento sólo puede tener uno) -> #
+    Pseudoclases: elementos propios de css que me hacen referencia a mi html -> características particulares -> :root
 
--Clases: Un poco mas especificas(vrios elementos pueden tener la misma clase)
-CLASES: SE LLAMAN POR .
-
--ID:sumamente especificos(cada elemento solo puede tener 1)
-ID: SE LLAMAN POR #
-
-pseudoclase: elementos propios de CSS me hacen referencia ami html -> caracteristicas particulares -> :root
-
-Pseudoclase -> Codigo raiz
-
+    Pseudoelementos: -> ::after
 */
 
-:root{--tipografia:
-    --tipografia:"Zilla Slab,"}
 
-    /* condiciones iniciales */
-    /* Los estilos ue quiero en todo mi sitio web */
+/* pseudoclase que me hace referencia a todo mi html root -> codíco raíz */
+:root{
+    border:solid var(--colorTexto);
+    --tipografia:'Josefin Sans', sans-serif;
+    --colorFondo:white;
+    --colorClaro:#353530;
+    --colorTexto:#92ddc2;
+    --colorContraste:#d3dd92;
+}
 
-    /* * -> selector universal -> aplica para todos los estilos a TODO */
-     /*MARGIN -> MARGEN EXTERNO  */
-*margin:{--tipografia:--tipografia:--tipografia: zilla sab, }
+
+/* Condiciones iniciales */
+/* Los estilos que quiero en TODO MI SITIO WEB */
 
 
+/* *-> selector universal -> me aplica los estilos a TODO */
+*{
+    /* margin ->margen externo */
+    margin:0;
+    /* padding -> margen interno */
+    padding:0;
 
-/* ----------HEADEAR-------- */
-/* CONTENEDOR PADRE -> DETERMINAR DIMENSIONES */
+}
+
+body{
+
+    border: solid var(--colorTexto);
+
+    /* Ancho del tamaño de mi pantalla */
+    width:100%;
+    height: 100%;
+    font-size: 12px;
+    /* background-color -> color de fondo */
+    background-color: var(--colorFondo);
+    /* tipografía */
+    font-family: var(--tipografia);
+    /* color de la letra */
+    color: var(--colorTexto);
+    /* Quitar el scroll horizontal 
+        overflow -> si se sobresale el contenido
+        hidden -> esconder
+    */
+    overflow-x: hidden;
+    /* ajuste a mis dimensiones */
+    box-sizing: border-box;
+}
+
+
+/* ---------HEADER------- */
+
+/* contenedor padre -> determinen dimensiones */
 header{
-    border:solid green ;
-/* ANCHO */
-width: 100vw;
-height: 100vh;
-
-
-
-}
+    /* ancho */
+    /* vw -> ancho de pantalla
+        vh -> alto de pantalla
+    */
+    border: solid var(--colorTexto);
+    width: 100vw;
+    height: 40vh;
+    color: #92ddc2;
     
-.menuNav{
-    background-color: var(--colorClaro);
-width: 100px;
-height: 100px;
 }
 
-.listaMenu{
-    border: 5px solid red;
+/* Lo que está dentro del header son hijos */
 
+.menuNav{
+    background-color: var(--colorFondo);
+    width: 100%;
+    height: 50px;
+    font-family: var(--tipografia);
+    
+}
+
+/* contenedor padre de las listas que quiero modificar una al lado del otro */
+.listaMenu{
+    height:100%;
+    /* disposición flexible -> los elementos uno al lado del otro */
+    display: flex;
+    /* centrar */
+    /* centra an x */
+    justify-content: center;
+    /* centrar en y */
+    align-items: center;
+    /* separeciones entre elementos hijos */
+    gap: 60px;
+    /* quitar viñetas de lista */
+    list-style: none;
+    
+}
+
+.listaMenu a{
+    /* quitar la decoración del texto */
+    text-decoration: none;
+    /* color del texto */
+    color: var(--colorTexto);
+    /* tamaño de texto */
+    font-size: 12px;
+    /* más ancha la letra -> negrilla */
+    font-weight: bold;
+
+    
+}
+
+.listaMenu a:hover{
+    color: black;
+}
+
+.logo{
+    /* ancho */
+    width: 100px;
+    /* alto */
+    height: 100px;
+    
+}
+.buscar{
+    width: 300px;
+    height: 300px;
+}
+
+.carrito{
+    width: 70px;
+    height: 70px;
+
+}
+
+.usuario{
+
+    width: 70px;
+    height: 70px;
+
+}
+/* banner */
+/* contenedor padre de la imagen */
+.baner{
+    border: solid var(--colorTexto);
+    width: 100%;
+    height: 255%;
+    display: flex;
+    
+
+
+
+
+
+
+}
+/* mi imagen ocupa todo el espacio de su padre */
+.video-banner{
+    
+    width: 100%;
+    height: 30%;
+    /* manipular la img */
+    object-fit: fill;
+
+    
+}
+
+/* ---------MAIN------- */
+main{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    /* dispongan una debajo de la otra */
+    flex-direction: column;
+}
+
+/* Seccion 1 */
+
+/* Seccion 2 */
+
+.seccion2{
+  
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    
+    
+}
+
+.contenedor-img{
+
+    /* organizar en filas y columnas */
+    display: grid;
+    /* filas */
+    /* 1fr -> me ocupe una fracción del espacio */
+    grid-template-rows: 1fr 1fr;
+
+    /* Columnas  */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+    width: 100%;
+    height: auto;
+    justify-content: center
+    
+}
+
+.contenedor-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.title1{
+
+width: 100%;
+display: flex;
+height: 100%;
 
 
 }
+.buton1{
+    background-color: #92ddc2;
+    font-family: var(--tipografia);
+    color: azure;
+    border-color: aliceblue;
+    
+}
 
-/* LO QUE ESTA DENTRO DEL HEADER SON HIOS */
+.buton2{
+    background-color: #92ddc2;
+    font-family: var(--tipografia);
+    color: azure;
+    border-color: aliceblue;
+    
+}
+
+
+.buton3{
+    background-color: #92ddc2;
+    font-family: var(--tipografia);
+    color: azure;
+    border-color: aliceblue;
+    
+}
+
+.buton4{
+    background-color: #92ddc2;
+    font-family: var(--tipografia);
+    color: azure;
+    border-color: aliceblue;
+    
+}
+.buton5{
+    background-color: #92ddc2;
+    font-family: var(--tipografia);
+    color: azure;
+    border-color: aliceblue;
+    
+}
+
+.buton6{
+    background-color: #92ddc2;
+    font-family: var(--tipografia);
+    color: azure;
+    border-color: aliceblue;
+    
+}
 
 
 
-/* -------MAIN--------- */
 
 
-/* --------FOOTER------- */
+
+
+.titulo{
+    /* centrar texto */
+    text-align: center;
+    /* textos en mayúscula */
+    text-transform: uppercase;
+    /* margen arriba y abajo - derecha e izquierda */
+    margin: 1px 1px;
+    font-family: var(--tipografia);
+}
+.logo4 {
+    width: 8%;
+    height: 8%;
+}
+.logo5{
+    width: 8%;
+    height: 8%;
+}
+/* ---------FOOTER------- */
+
+/* definir qué es lo que van a editar */
+/* contenedor padre */
+footer{
+    /* dimensiones */
+    width: 100%;
+    height: 120%;
+    /* aspectos generales */
+    background-color: var(--colorClaro);
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.logo-2{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+
+}
+
+/* Los íconos en css y html, se toman como si fueran texto */
+.redesSociales{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+i{
+    margin: 15px;
+    color: white;
+}
