@@ -1,0 +1,4 @@
+## NOMBRE DEL PROYECTO: ACTIVIDAD 2 - CONCEPTOS CSS AVANZADO -FLEXBOX-GRID
+## DESCRIPCION
+vamos a continuar con la practica
+## autor
