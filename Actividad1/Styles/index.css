@@ -348,6 +348,43 @@ footer {
     color: white;
 }
 
+.footer-form{
+    color: var(--colorTexto);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.input{
+    border: solid var(--colorTexto) 2px;
+    background-color: var(--colorClaro);
+}
+
+.contact-form{
+    
+    grid-template-columns: 2fr;
+    display: flex;
+    gap: 10px;
+
+}
+.button-form{
+
+    width: 50px;
+    height: auto;
+    font-family: var(--tipografia);
+    background-color: var(--colorTexto);
+    color: white;
+}
+.form1{
+    border: solid red 2px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.form2{
+
+}
 .logo-2 {
     width: 100px;
     height: 100px;
