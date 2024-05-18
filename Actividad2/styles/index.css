@@ -1,5 +1,5 @@
 /* Importaciones fuentes */
-@import url('https://fonts.cdnfonts.com/css/ysabeau-sc');
+@import url('https://fonts.cdnfonts.com/css/welcome-autumn-2');
 @import url('https://fonts.cdnfonts.com/css/quito');
 
 /* Establecer las variables
@@ -20,7 +20,7 @@ Medidas
     --colorText2: #19160A;
 
     /* Fuentes */
-    --textTitle: 'Ysabeau SC', sans-serif;
+    --textTitle:'Welcome Autumn', sans-serif;
     --textContent: 'Quito', sans-serif;
 }
 
