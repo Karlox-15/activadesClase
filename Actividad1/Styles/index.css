@@ -346,12 +346,16 @@ footer {
     gap: 20px;
     align-items: center;
     color: white;
+    flex-wrap: wrap;
+   
 }
 
 .footer-form{
     color: var(--colorTexto);
     display: flex;
     flex-direction: column;
+    margin-left: 150px;
+
     
     
 }
@@ -376,13 +380,49 @@ footer {
     color: white;
 }
 .form1{
-    border: solid red 2px;
+   
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
     
 
 }
 .form2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.form-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title{
+    font-size: 50px;
+    margin-top: 100px;
+    font-family: var(--tipografia);
+}
+
+.email-address{
+    margin-top: 20px;
+    }
+
+.direccion{
+    margin-top: 20px;
+
+}
+
+.textarea{
+background-color: var(--colorClaro);
+border: solid var(--colorTexto);
+color: var(--colorTexto);
+resize:none;
 
 }
 .logo-2 {
@@ -393,6 +433,20 @@ footer {
 }
 
 /* Los íconos en css y html, se toman como si fueran texto */
+
+.social-media{
+    background-color: var(--colorTexto);
+    width: 100%;
+
+
+}
+
+.phone{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .redesSociales {
     text-align: center;
 }
