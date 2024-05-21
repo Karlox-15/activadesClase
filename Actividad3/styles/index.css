@@ -1,0 +1,100 @@
+/* Variables */
+:root{
+    --colorfondo: beige;
+    --colorClaro: lightsalmon;
+    --colorEnfasis: green;
+    --tipografia: 'Arial Narrow'
+}
+
+/* condiciones iniciales */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--colorfondo);
+    font-family: var(--tipografia);
+    font-size: 25px;
+}
+
+/*HEADER*/
+header{
+    border: solid red;
+    width: 100vw;
+    height: auto;
+   
+
+}
+.titulo{
+
+    height: 150px;
+    width: 100%;
+    background-color: var(--colorEnfasis);
+    display: grid;
+    place-content: center;
+    color: var(--colorfondo);
+
+}
+.contenedor-slider{
+    border: solid 5px var(--colorEnfasis);
+    width: 1000px;
+    height: 500px;
+    /* Margin nos sirve para centrar solo contenedores */
+    margin: 100px auto;
+    overflow-x: scroll;
+    
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* Nombre que se conecta con el keyframe */
+    animation-name: deslizar;
+    /* tiempo de duracion de mi animacion */
+    animation-duration: 10s;
+    /* cuantas veces se repite la animacion */
+    animation-iteration-count: infinite;
+    /* forma en que queremos que se de el movimiento */
+    animation-timing-function: ease-in-out;
+
+    animation-direction: alternate;
+    
+}
+
+/* vamos a poner a funcionar la animacion */
+
+/* 0% -> 50% -> 100% 
+from -> to*/
+
+@keyframes deslizar {
+    from {
+        transform: translateX(0%);
+    }
+    
+    50%{transform:  translateX(-150%);}
+    to{
+        transform: translateX(-300%);
+    }
+    
+}
+
+.contenedor-slider img{
+    width: 100%;
+    height: 100%;
+}
+/*MAIN*/
+
+/*FOOTER*/
+footer{
+    height: 150PX;
+    width: 100%;
+    background-color:  var(--colorEnfasis);
+    /* Alternativa para centrar un elemento */
+    display: grid;
+    /* Centra x y y */
+    place-content: center;
+
+}
