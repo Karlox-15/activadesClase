@@ -1,53 +1,60 @@
 /* Variables */
-:root{
+:root {
     --colorfondo: beige;
     --colorClaro: lightsalmon;
     --colorEnfasis: green;
-    --tipografia: 'Arial Narrow'
+    --tipografia: 'Arial Narrow', Arial, sans-serif;
 }
 
 /* condiciones iniciales */
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--colorfondo);
     font-family: var(--tipografia);
     font-size: 25px;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
-header{
-    border: solid red;
+header {
     width: 100vw;
     height: auto;
-   
-
 }
-.titulo{
 
+.titulo {
     height: 150px;
     width: 100%;
     background-color: var(--colorEnfasis);
     display: grid;
     place-content: center;
     color: var(--colorfondo);
+    transition: all 500ms ease-in-out;
 
 }
-.contenedor-slider{
+
+.titulo:active{
+    background-color: brown;
+    color: chartreuse;
+    transform: scale(1.2);
+}
+
+.contenedor-slider {
     border: solid 5px var(--colorEnfasis);
-    width: 1000px;
-    height: 500px;
+    width: 75%;
+    height: 65vh;
     /* Margin nos sirve para centrar solo contenedores */
     margin: 100px auto;
-    overflow-x: scroll;
-    
+    overflow-x: hidden;
+
 }
-.slider{
+
+.slider {
     width: 100%;
     height: 100%;
     display: flex;
@@ -61,7 +68,7 @@ header{
     animation-timing-function: ease-in-out;
 
     animation-direction: alternate;
-    
+
 }
 
 /* vamos a poner a funcionar la animacion */
@@ -73,25 +80,66 @@ from -> to*/
     from {
         transform: translateX(0%);
     }
-    
-    50%{transform:  translateX(-150%);}
-    to{
+
+    50% {
+        transform: translateX(-150%);
+    }
+
+    to {
         transform: translateX(-300%);
     }
-    
+
 }
 
-.contenedor-slider img{
+.contenedor-slider img {
     width: 100%;
     height: 100%;
 }
+
 /*MAIN*/
+main{
+
+    display: flex;
+    justify-content: center;
+}
+.contenido{
+    border: solid 5px var(--colorEnfasis);
+    width: 75%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.tituloSecundario{
+    text-align: center;
+    padding: 25px;
+}
+.imgParrafo{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    padding: 15px;
+}
+
+/* Yo puedo llamar varios elementos de mi html, a los que les voy a aplicar los mismos estilod, sólo separándolos por , */
+/* .imgParrafo img, 
+.imgParrafo p {
+    width: 50%;
+    height: 100%;
+} */
+
+.imgParrafo img{
+    width: 50%;
+}
+
+.imgParrafo p{
+    width: 50%;
+}
 
 /*FOOTER*/
-footer{
+footer {
     height: 150PX;
     width: 100%;
-    background-color:  var(--colorEnfasis);
+    background-color: var(--colorEnfasis);
     /* Alternativa para centrar un elemento */
     display: grid;
     /* Centra x y y */
