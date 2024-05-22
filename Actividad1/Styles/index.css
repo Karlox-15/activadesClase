@@ -104,6 +104,8 @@ header {
     width: 100%;
     height: 50px;
     font-family: var(--tipografia);
+    display: flex;
+    flex-wrap: nowrap;
 
 }
 
@@ -121,8 +123,13 @@ header {
     gap: 60px;
     /* quitar viñetas de lista */
     list-style: none;
+    border-top: solid var(--colorTexto) 3px;
+    border-bottom: solid var(--colorTexto) 3px;
+    
+
 
 }
+
 
 .listaMenu a {
     /* quitar la decoración del texto */
@@ -133,12 +140,21 @@ header {
     font-size: 12px;
     /* más ancha la letra -> negrilla */
     font-weight: bold;
-
+    
 
 }
 
 .listaMenu a:hover {
     color: black;
+    
+}
+
+.logo-img{
+
+    display: flex;
+    align-items: center;
+
+
 }
 
 .logo {
@@ -146,10 +162,18 @@ header {
     width: 100px;
     /* alto */
     height: 100px;
+    align-items: center;
 
 }
 
+.lista-m {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .buscar {
+
+    margin: 0;
     width: 300px;
     height: 300px;
 }
@@ -180,6 +204,7 @@ header {
     width: 100%;
     height: 255%;
     display: flex;
+    margin-top: 100px;
 
 
 
