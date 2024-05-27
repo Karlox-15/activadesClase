@@ -13,3 +13,15 @@
     /* posision de la imagen */
     object-position: top;
 }
+
+/* seccion logos */
+.mislogos img{
+    width: 100px;
+    height: 100px;
+}
+
+.mislogos div{
+
+    border:  solid red;
+    align-items: center;
+}
