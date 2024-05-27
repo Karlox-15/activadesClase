@@ -1,0 +1,216 @@
+/* Importaciones - fuentes */
+@import url('https://fonts.cdnfonts.com/css/haunted-villa');
+
+
+
+
+
+
+:root {
+    /*PALETA DE COLORES*/
+    --colorFondo: #353530;
+    --colorEnfasis1: #6f7357;
+    --colorEnfasis2: #353530;
+    --colorEnfasis3: #f5efe6;
+    --colorText: #6f7357;
+    --colorText2: #353530;
+
+    /* FUENTES*/
+    --textTitle: 'Haunted Villa', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--colorEnfasis3);
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+
+}
+
+
+/* ----------------HEADER--------------- */
+header {
+    width: 100%;
+    height: 100px;
+}
+
+.menuNavegacion {
+
+
+    border: solid var(--colorEnfasis1) 3px;
+    width: 100%;
+    height: 100px;
+    background-color: var(--colorEnfasis3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: var(--textTitle);
+    z-index: 1000;
+}
+
+.logo {
+
+    height: 150%;
+}
+
+.baner {
+
+    
+    height: 50vh;
+    width: 50vw;
+    
+    display: flex;
+    margin: 100px auto;
+    justify-content: center;
+   
+}
+
+
+.img-logo {
+    height: 100%;
+}
+
+.listaMenu {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+.listaMenu a {
+    text-decoration: none;
+    color: var(--colorText);
+    font-family: var(--textContent);
+    font-size: 35px;
+}
+
+.listaMenu a:hover {
+    color: var(--colorEnfasis1);
+}
+
+/* ----------------MAIN--------------- */
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-family: var(--textTitle);
+    
+    color: var(--colorEnfasis1);
+    
+    
+}
+
+.contenido {
+    background-color: var(--colorEnfasis3);
+    border: solid 5px var(--colorEnfasis3);
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tituloSecundario {
+    text-align: center;
+    font-size: 50px;
+}
+
+.imgParrafo {
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 100PX;
+    height: 100PX;
+    
+}
+
+.imgParrafo img {
+    width: 50%;
+    animation-name: escala;
+     animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes escala {
+    from{
+        transform: scale(0.99);
+       }
+    
+    to{
+        transform: scale(1.3);
+           }
+}
+
+
+.imgParrafo p {
+    width: 25%;
+    font-size: 20PX;
+}
+
+/* ----------------FOOTER--------------- */
+
+footer {
+    height: 100px;
+    margin-top: 100px;
+    background-color: var(--colorEnfasis2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 150px;
+    font-family: var(--textTitle);
+    color: var(--colorEnfasis3);
+
+}
+
+
+
+.redesSociales {
+    text-align: center;
+}
+
+h3 {
+    color: var(--colorEnfasis3);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+i {
+    margin: 15px;
+    color: white;
+}
+
+
+
+@media (max-width: 490px) {
+    .banner {
+        height: 70vh;
+        width: 100vw;
+        margin: 120px auto 0 auto;
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    .banner {
+        height: 60vh;
+        width: 100vw;
+        margin: 110px auto 0 auto;
+        font-size: 1.75em;
+    }
+}

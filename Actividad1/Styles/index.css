@@ -199,6 +199,7 @@ header {
 
 /* banner */
 /* contenedor padre de la imagen */
+
 .baner {
     border: solid var(--colorTexto);
     width: 100%;
