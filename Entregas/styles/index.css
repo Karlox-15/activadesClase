@@ -1,5 +1,10 @@
 /* Importaciones - fuentes */
 @import url('https://fonts.cdnfonts.com/css/haunted-villa');
+@font-face {
+    font-family: AntioRegular;
+
+    src:url(AntioRegular.otf) 
+}
 
 
 
@@ -17,34 +22,56 @@
 
     /* FUENTES*/
     --textTitle: 'Haunted Villa', sans-serif;
+    --text-content: 'AntioRegular', sans-serif;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     background-color: var(--colorEnfasis3);
     width: 100vw;
     height: auto;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
 
 /* ----------------HEADER--------------- */
 header {
-    width: 100%;
+    width: 100vw;
+    height: 200px;
+    background-image: url(../assets/fondobaner.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+
+}
+
+.profile-pic{
+
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.p-pic{
+
+    width: 100px;
     height: 100px;
 }
 
 .menuNavegacion {
 
-
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--colorEnfasis3);
     border: solid var(--colorEnfasis1) 3px;
+    color: var(--colorEnfasis1);
+    display: flex;
+    
+
+    /* border: solid var(--colorEnfasis1) 3px;
     width: 100%;
     height: 100px;
     background-color: var(--colorEnfasis3);
@@ -57,12 +84,18 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     font-family: var(--textTitle);
-    z-index: 1000;
+    z-index: 1000; */
 }
 
 .logo {
 
-    height: 150%;
+    display: flex;
+    align-items: center;
+    width: 50vw;
+   
+
+
+
 }
 
 .baner {
@@ -79,20 +112,26 @@ header {
 
 
 .img-logo {
-    height: 100%;
+
+    width: 70px;
+    height: 70px;
+    
+  
 }
 
 .listaMenu {
     display: flex;
     gap: 50px;
     list-style: none;
+    
+    
 }
 
 .listaMenu a {
     text-decoration: none;
     color: var(--colorText);
     font-family: var(--textContent);
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .listaMenu a:hover {
@@ -173,7 +212,7 @@ footer {
     align-items: center;
     font-size: 20px;
     gap: 150px;
-    font-family: var(--textTitle);
+    font-family: var(--text-content);
     color: var(--colorEnfasis3);
 
 }
