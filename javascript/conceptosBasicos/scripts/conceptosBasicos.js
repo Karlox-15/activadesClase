@@ -45,3 +45,37 @@ const esFalso = false;
 
 let arreglo = [5, 6, 7, 3, 9]
 const arregloNombres = ['Carlos', 'manuela', 'Daniel']
+
+
+const personal = {
+    nombre: 'Carlos',
+    edad: 23,
+    altura: '170 cm',
+    nacionalidad: 'colombiano',
+
+    saludar: function(){
+        console.log('chao, desarrolladores')
+    }
+}
+let productos = {
+    nombre: 'computador',
+    precio: 10000,
+    cantidad: 20,
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
